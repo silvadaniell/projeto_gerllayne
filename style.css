@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "Sacramento";
+  src: url("assets/sacramento.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+:root {
+  --fundo: #e9e5d4;
+  --rodape: #90333c;
+  --vinho: #81151e;
+  --texto: #b3172d;
+  --manuscrita: "Sacramento", cursive;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fundo); color: var(--texto); }
+img { display: block; max-width: 100%; height: auto; }
+.apresentacao { padding: 28px 24px 16px; }
+.apresentacao-conteudo { position: relative; max-width: 1040px; margin: auto; }
+.saudacao { position: absolute; top: 0; left: 3%; margin: 0; font: 400 clamp(30px, 3.5vw, 46px)/1.3 var(--manuscrita); }
+.retrato-e-nome { width: fit-content; margin: auto; padding-top: 16px; text-align: center; }
+.retrato { width: clamp(200px, 28vw, 320px); aspect-ratio: 200 / 245; padding: 4px; border: 1px solid #b76b62; border-radius: 50% 50% 0 0 / 41% 41% 0 0; }
+.foto { width: 100%; height: 100%; border-radius: 50% 50% 0 0 / 41% 41% 0 0; object-fit: cover; object-position: center; }
+h1 { margin: 0; font: 400 clamp(38px, 4.5vw, 56px)/1.25 var(--manuscrita); }
+.estrelas { position: absolute; width: clamp(58px, 8vw, 100px); mix-blend-mode: multiply; }
+.estrelas-esquerda { left: 3%; bottom: 14%; }
+.estrelas-direita { right: 3%; top: 7%; transform: rotate(180deg); }
+.faixa-estrelada {
+  height: 38px;
+  background: var(--vinho) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='38' viewBox='0 0 34 38'%3E%3Cg stroke='%23e9e5d4' stroke-width='1.2' stroke-linecap='round'%3E%3Cpath d='M17 7v24M7 19h20M10 12l14 14M10 26l14-14'/%3E%3C/g%3E%3C/svg%3E") center;
+}
+.sobre { display: grid; place-items: center; padding: 36px 24px; background: var(--vinho) url("assets/xadrez.png") center / 550px auto repeat; }
+.cartao { width: min(100%, 590px); padding: 38px; background: var(--fundo); mask: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%20460%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cmask%20id%3D%22edge%22%3E%3Crect%20width%3D%22600%22%20height%3D%22460%22%20fill%3D%22white%22%2F%3E%3Cg%20fill%3D%22black%22%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%2216%22%2F%3E%3Ccircle%20cx%3D%220%22%20cy%3D%22460%22%20r%3D%2216%22%2F%3E%3Ccircle%20cx%3D%2275%22%20cy%3D%220%22%20r%3D%2216%22%2F%3E%3Ccircle%20cx%3D%2275%22%20cy%3D%22460%22%20r%3D%2216%22%2F%3E%3Ccircle%20cx%3D%22150%22%20cy%3D%220%22%20r%3D%2216%22%2F%3E%3Ccircle%20cx%3D%22150%22%20cy%3D%22460%22%20r%3D%2216%22%2F%3E%3Ccircle%20cx%3D%22225%22%20cy%3D%220%22%20r%3D%2216%22%2F%3E%3Ccircle%20cx%3D%22225%22%20cy%3D%22460%22%20r%3D%2216%22%2F%3E%3Ccircle%20cx%3D%22300%22%20cy%3D%220%22%20r%3D%2216%22%2F%3E%3Ccircle%20cx%3D%22300%22%20cy%3D%22460%22%20r%3D%2216%22%2F%3E%3Ccircle%20cx%3D%22375%22%20cy%3D%220%22%20r%3D%2216%22%2F%3E%3Ccircle%20cx%3D%22375%22%20cy%3D%22460%22%20r%3D%2216%22%2F%3E%3Ccircle%20cx%3D%22450%22%20cy%3D%220%22%20r%3D%2216%22%2F%3E%3Ccircle%20cx%3D%22450%22%20cy%3D%22460%22%20r%3D%2216%22%2F%3E%3Ccircle%20cx%3D%22525%22%20cy%3D%220%22%20r%3D%2216%22%2F%3E%3Ccircle%20cx%3D%22525%22%20cy%3D%22460%22%20r%3D%2216%22%2F%3E%3Ccircle%20cx%3D%22600%22%20cy%3D%220%22%20r%3D%2216%22%2F%3E%3Ccircle%20cx%3D%22600%22%20cy%3D%22460%22%20r%3D%2216%22%2F%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%2216%22%2F%3E%3Ccircle%20cx%3D%22600%22%20cy%3D%220%22%20r%3D%2216%22%2F%3E%3Ccircle%20cx%3D%220%22%20cy%3D%2266%22%20r%3D%2216%22%2F%3E%3Ccircle%20cx%3D%22600%22%20cy%3D%2266%22%20r%3D%2216%22%2F%3E%3Ccircle%20cx%3D%220%22%20cy%3D%22132%22%20r%3D%2216%22%2F%3E%3Ccircle%20cx%3D%22600%22%20cy%3D%22132%22%20r%3D%2216%22%2F%3E%3Ccircle%20cx%3D%220%22%20cy%3D%22198%22%20r%3D%2216%22%2F%3E%3Ccircle%20cx%3D%22600%22%20cy%3D%22198%22%20r%3D%2216%22%2F%3E%3Ccircle%20cx%3D%220%22%20cy%3D%22264%22%20r%3D%2216%22%2F%3E%3Ccircle%20cx%3D%22600%22%20cy%3D%22264%22%20r%3D%2216%22%2F%3E%3Ccircle%20cx%3D%220%22%20cy%3D%22330%22%20r%3D%2216%22%2F%3E%3Ccircle%20cx%3D%22600%22%20cy%3D%22330%22%20r%3D%2216%22%2F%3E%3Ccircle%20cx%3D%220%22%20cy%3D%22396%22%20r%3D%2216%22%2F%3E%3Ccircle%20cx%3D%22600%22%20cy%3D%22396%22%20r%3D%2216%22%2F%3E%3C%2Fg%3E%3C%2Fmask%3E%3C%2Fdefs%3E%3Crect%20width%3D%22600%22%20height%3D%22460%22%20fill%3D%22white%22%20mask%3D%22url%28%23edge%29%22%2F%3E%3C%2Fsvg%3E") center / 100% 100% no-repeat; }
+.cartao-interior { position: relative; display: grid; align-items: center; min-height: 290px; padding: 44px 24px; border: 6px dotted var(--rodape); }
+.cartao p { margin: 0; font: 400 31px/1.5 var(--manuscrita); }
+.coracao-cartao { position: absolute; right: 12px; top: 8px; width: 24px; transform: rotate(9deg); mix-blend-mode: multiply; }
+.rodape { position: relative; padding: 12px 24px 20px; background: var(--rodape); color: var(--fundo); }
+.titulo-redes { display: flex; align-items: center; justify-content: center; gap: 28px; }
+.titulo-redes h2 { margin: 0; font: 400 34px/1.3 var(--manuscrita); }
+.coracao-creme { font-size: 30px; transform: rotate(15deg); }
+.redes { display: flex; justify-content: center; gap: 22px; padding: 0; margin: 14px 0 0; list-style: none; }
+.rede { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--fundo); }
+.rede img { width: 25px; height: auto; mix-blend-mode: multiply; }
+a.rede { transition: transform 160ms ease; }
+a.rede:hover { transform: translateY(-3px); }
+a.rede:focus-visible { outline: 2px solid var(--fundo); outline-offset: 5px; }
+.brilho-rodape { position: absolute; top: 0; font-size: 28px; }
+.brilho-esquerda { left: max(20px, calc(50% - 175px)); }
+.brilho-direita { right: max(20px, calc(50% - 175px)); }
+@media (min-width: 700px) {
+  .sobre { padding-block: 44px; }
+}
+@media (max-width: 699px) {
+  .apresentacao { padding: 12px 24px; }
+  .retrato-e-nome { padding-top: 20px; }
+  .cartao { width: min(100%, 400px); padding: 32px; }
+  .cartao-interior { min-height: 240px; padding: 44px 14px; border-width: 5px; }
+  .cartao p { font-size: 24px; line-height: 1.3; }
+  .sobre { padding: 30px 24px; }
+}
+@media (max-width: 420px) {
+  .apresentacao { padding-inline: 18px; }
+  .saudacao { left: 0; font-size: 29px; }
+  .retrato-e-nome { padding-top: 46px; }
+  .estrelas { width: 46px; }
+  .estrelas-direita { right: 0; top: 14%; }
+  .estrelas-esquerda { left: 0; bottom: 18%; }
+  .sobre { padding: 26px 16px; }
+  .cartao { padding: 25px; }
+  .cartao-interior { padding: 42px 12px 28px; }
+  .cartao p { font-size: 23px; line-height: 1.35; }
+  .titulo-redes { gap: 22px; }
+  .titulo-redes h2 { font-size: 30px; }
+  .brilho-esquerda { left: 6%; }
+  .brilho-direita { right: 6%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  a.rede { transition: none; }
+}
+
+/* Mantém o texto completo acessível e revela a apresentação letra por letra. */
+.somente-leitor {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
